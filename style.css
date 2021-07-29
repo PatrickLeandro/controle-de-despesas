@@ -176,4 +176,5 @@ input[type='number'] {
   position: fixed;
   bottom: 0;
   width: 350px;
+  background: var(--background);
 }
