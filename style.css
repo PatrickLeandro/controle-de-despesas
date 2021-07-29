@@ -3,7 +3,8 @@
 :root {
   --box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
   --bordaFechamento: rgb(20, 163, 37);
-  --azulClaro: #2e75cc;
+  --azulClaro: #7ab5fc;
+  --azul: #2e75cc;
 }
 
 * {
@@ -15,7 +16,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  padding: 20px;
   min-height: 100vh;
   margin: 0;
   font-family: 'Lato', sans-serif;
@@ -29,7 +30,7 @@ body {
 h1 {
   letter-spacing: 1px;
   margin: 0;
-  color: var(--azulClaro);
+  color: var(--azul);
   font-size: 20px;
 }
 
