@@ -5,6 +5,9 @@
   --bordaFechamento: rgb(20, 163, 37);
   --azulClaro: #7ab5fc;
   --azul: #2e75cc;
+  --background: #1d1c1c ;
+  --backgroundInput: #333;
+  --color: #fff;
 }
 
 * {
@@ -12,7 +15,7 @@
 }
 
 body {
-  background-color: #f7f7f7;
+  background-color: var(--background);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -20,6 +23,7 @@ body {
   min-height: 100vh;
   margin: 0;
   font-family: 'Lato', sans-serif;
+  color: var(--color);
 }
 
 .container {
@@ -101,11 +105,13 @@ input[type='number'] {
   font-size: 12px;
   padding: 8px;
   width: 100%;
+  background-color: var(--backgroundInput);
+  color: var(--color);
 }
 
 .btn {
   cursor: pointer;
-  background-color: var(--azulClaro);
+  background-color: var(--azul);
   box-shadow: var(--box-shadow);
   color: #fff;
   border: 0;
@@ -128,9 +134,9 @@ input[type='number'] {
 }
 
 .transactions li {
-  background-color: #fff;
+  background-color: var(--backgroundInput);
   box-shadow: var(--box-shadow);
-  color: #333;
+  color: var(--color);
   display: flex;
   justify-content: space-between;
   position: relative;
