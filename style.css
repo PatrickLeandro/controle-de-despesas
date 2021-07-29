@@ -165,3 +165,9 @@ input[type='number'] {
 .transactions li:hover .delete-btn {
   opacity: 1;
 }
+
+.adcEntrega{
+  position: fixed;
+  bottom: 0;
+  width: 350px;
+}
