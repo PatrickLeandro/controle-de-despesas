@@ -146,7 +146,7 @@ input[type='number'] {
 }
 
 .transactions li.plus {
-  border-right: 5px solid #2ecc71;
+  // border-right: 5px solid #2ecc71;
 }
 
 .transactions li.minus {
