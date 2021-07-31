@@ -6,6 +6,7 @@
   --azulClaro: #7ab5fc;
   --azul: #2e75cc;
   --background: #1d1c1c ;
+  --backgroundDiv: rgba(0, 0, 0, 0.3) ;
   --backgroundInput: #333;
   --color: #fff;
 }
@@ -100,14 +101,27 @@ label {
 
 input[type='text'],
 input[type='number'] {
-  border: 1px solid #dedede;
+  border: none;
+  border-bottom: 1px solid #dedede;
   border-radius: 2px;
   display: block;
   font-size: 12px;
   padding: 8px;
-  width: 100%;
+  width: 90%;
+  margin: 0 auto;
   background-color: var(--backgroundInput);
   color: var(--color);
+}
+
+.adcEntrega{
+  position: fixed;
+  bottom: 0;
+  padding: 0 10px;
+  max-width: 350px;
+  min-width: 300px;
+  background: var(--backgroundDiv);
+
+
 }
 
 .btn {
@@ -174,34 +188,6 @@ input[type='number'] {
   opacity: 1;
 }
 
-.adcEntrega{
-  position: fixed;
-  bottom: 0;
-  max-width: 350px;
-  min-width: 300px;
-  background: var(--background);
-  opacity: .6;
 
-}
 
-.bg-hero {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100vh;
-  border: 0px solid green;
-  overflow: hidden;
-  z-index: -1;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-          -webkit-transform: scale(2) rotate(25deg);
-            transform: scale(2) rotate(25deg);
-}
+
