@@ -17,11 +17,11 @@
 
 .background::after {
   content: "";
-  background: url(image/5570215.jpg);
-  opacity: 0.2;
-  top: -600px;
-  left: -300px;
-  bottom: 0;
+  background: url(image/4882066.jpg);
+  opacity: 0.26;
+  top: 0;
+  left: -900px;
+  bottom: -700px;
   right: 0;
   position: absolute;
   z-index: -1;   
@@ -127,12 +127,11 @@ input[type='number'] {
 }
 
 .adcEntrega{
-  position: fixed;
-  bottom: 0;
+
   padding: 0 10px;
   max-width: 350px;
   min-width: 300px;
-  background: var(--backgroundDiv);
+  margin-top: 20px;
 
 
 }
