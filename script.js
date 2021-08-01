@@ -7,6 +7,8 @@ const inputTransactionName = document.querySelector('#text');
 const inputTransactionAmount = document.querySelector('#amount');
 
 
+
+
 const localStorageTransactions = JSON.parse(localStorage
     .getItem('transactions'))
 
@@ -38,9 +40,13 @@ const addTransactionIntoDOM = transaction => {
    
 }
 
+
 const updateBalanceValues = () => {
     const transactionsAmounts = transactions
         .map(transaction => transaction.amount);
+
+        let entregasRealizadas = transactions.length;
+            document.querySelector('#qtdEntregas').innerHTML = `${entregasRealizadas} Entregas realizadas: `;
 
     const total = transactionsAmounts
         .reduce((accumulator, transaction) => accumulator + transaction, 0)
